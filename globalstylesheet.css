@@ -1,0 +1,27 @@
+
+h1 { 
+	text-shadow: 2px 2px #6495ED;
+}
+
+body {	
+	text-align: center;
+	font-family: 'Corben', Georgia, Times, serif;
+	font-color: #000000;
+	font-size: 24px;
+	background: #808080;
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	width: 400px;
+}
+
+table {
+	background: #F0F8FF;
+}
+
+nav {
+
+background: #F0F8FF;
+	
+}
+
