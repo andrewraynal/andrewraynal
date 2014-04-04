@@ -1,27 +1,35 @@
 
+header {
+	text-align: center;
+	font-size: 96px;
+	height: 300px;
+	width: 1300px;
+	background: #000080;
+	display: inline-block;
+}
+
 h1 { 
-	text-shadow: 2px 2px #6495ED;
+	font-size: 124px;
+	text-shadow: 1px 1px #000000;
+	color: #F0F8FF;
 }
 
 body {	
-	text-align: center;
-	font-family: 'Corben', Georgia, Times, serif;
-	font-color: #000000;
-	font-size: 24px;
-	background: #808080;
-	margin: 0px;
+	font-family: 'Special Elite', cursive;
+	font-size: 16px;
+	margin-left: 50px;
 	padding: 0px;
 	height: 100px;
 	width: 400px;
 }
 
-table {
-	background: #F0F8FF;
+ul {
+	font-size: 48px;
+	list-style: none;
+	margin-top: 20px;
+	margin-right: -500px;
+	margin-left: 100px;
 }
 
-nav {
 
-background: #F0F8FF;
-	
-}
 
