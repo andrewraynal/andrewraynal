@@ -1,73 +1,44 @@
 
 header {
 	text-align: center;
-	background-color: #000080;
-	border-style: solid;	
-	font-size: 96px;
-	margin-right: 100px;
-	margin-bottom: 50px;
-	height: 250px;
-	width: 1300px;
+	background: url(HeaderBG.png);
+	background-size: contain;	
+	font-size: 48px;
+	padding: 0;
+	margin: 0;
+	height: 225px;
+	width: 1000px;
 	display: inline-block;
+
 }
 
-h1 { 
-	font-size: 124px;
-	text-shadow: 2px 2px #000000;
+a {
+	color: none
+
+}
+h1 {
+	text-shadow: 2px 2px #000;
 	color: #F0F8FF;
 }
 
 h2 {
-	font-size: 48px;
-	margin-top: 10px;
-	margin-right: -500px;
-
+	font-size: 36px;
 }
 
 body {	
-	background: url("funnysmiley.jpeg");
 	font-family: 'Special Elite', cursive;
-	font-size: 18px;
-	margin-left: 50px;
-	padding: 100px;
-	height: 100px;
-	width: 400px;
-}
-
-ul {
-	font-size: 64px;
-	
-}
-
-li {
-	font-size: 36px;
-	list-style: none;
+	font-size: 24px;
+	margin: 50px;
 }
 
 nav {
-	margin-top: 25px;
+	text-decoration: none;
+	display: inline-block;
 	margin-bottom: 25px;
-	display: inline-block;
+	font-size: 30px;	
 }
 
-footer {
-	text-align: center;
-	background-color: #000080;
-	border-style: solid;	
-	font-size: 16px;
-	margin-right: 100px;
-	height: 100px;
-	width: 1300px;
-	display: inline-block;
-}
-
-.left {
-float: left;
-width: 0%;
-}
-
-.right {
-margin-left: 25%;
-font-size: 30px;
-}
+ul {
+	list-style-type:none;
+	overflow: hidden;
 
