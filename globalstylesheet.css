@@ -2,44 +2,72 @@
 header {
 	text-align: center;
 	background-color: #000080;
+	border-style: solid;	
 	font-size: 96px;
-	height: 300px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	height: 250px;
 	width: 1300px;
 	display: inline-block;
 }
 
 h1 { 
 	font-size: 124px;
-	text-shadow: 1px 1px #000000;
+	text-shadow: 2px 2px #000000;
 	color: #F0F8FF;
+}
+
+h2 {
+	font-size: 48px;
+	margin-top: 10px;
+	margin-right: -500px;
+
 }
 
 body {	
 	background: url("funnysmiley.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	font-family: 'Special Elite', cursive;
-	font-size: 16px;
+	font-size: 18px;
 	margin-left: 50px;
-	padding: 0px;
+	padding: 100px;
 	height: 100px;
 	width: 400px;
-
 }
 
 ul {
 	font-size: 64px;
-	margin-top: 100px;
-
+	
 }
 
 li {
 	font-size: 36px;
 	list-style: none;
-	margin-top: 25px;
-	margin-bottom: 25px;
-
 }
 
+nav {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: inline-block;
+}
 
+footer {
+	text-align: center;
+	background-color: #000080;
+	border-style: solid;	
+	font-size: 16px;
+	margin-right: 100px;
+	height: 100px;
+	width: 1300px;
+	display: inline-block;
+}
+
+.left {
+float: left;
+width: 0%;
+}
+
+.right {
+margin-left: 25%;
+font-size: 30px;
+}
 

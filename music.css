@@ -1,0 +1,30 @@
+section {
+	margin: 25px;
+}
+
+article {
+  font-size: 36px;
+}
+
+.flex-box {
+  	list-style: none;
+  	display: inline-flex;
+    flex-flow: 'row wrap';
+  	justify-content: space-around;
+
+}
+
+.flex-pic {
+  	width: 450px;
+  	height: 250px;
+  	line-height: normal;
+}
+
+.musicalasidelft {
+  float: left;
+
+}
+
+.musicalasideright {
+  float: right; 
+}
