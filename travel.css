@@ -1,0 +1,53 @@
+
+.navcontainer {
+	margin: 0;
+	padding:0;
+	list-style-type:none;
+	text-align: center;
+}
+
+.navcontainer li {
+	display:inline-block;
+	margin: 15px;
+	padding: 15px 30px 15px 15px;
+	border-style: none;
+}
+
+.navcontainer a, .albumcontainer a {
+	border-style: none;
+}
+
+.albumcontainer {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.albumcontainer ul {
+	margin-left: 31.5%;
+	margin-top: 5%;
+}
+
+.albumcontainer li {
+	display: inline-block;
+
+}
+
+/*jquery*/
+
+.album1, .album2, .album3, .album4, .album5, .album6, .album7 {
+	display:none;
+}
+
+.show {
+	display:inline-block;
+}
+
+ul li a img.magnify {
+	width:400px;
+	height:400px;
+}
+
+.hide {
+	display: none;
+}

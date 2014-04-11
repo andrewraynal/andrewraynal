@@ -2,6 +2,13 @@
 	margin-bottom: 75px;
 }
 
+.pics {
+	list-style-type: none;
+	display: inline;
+	padding-right: 60px;
+
+}
+
 article {
 	width: 90%;
 	text-align: center;
@@ -10,11 +17,12 @@ article {
 .video {
 	text-align: center;
 	display: inline;
-	margin: 50px 50px 65px 50px;
-	padding: 50px 50px 50px 475px;
+	margin: 40px 50px 75px 50px;
+	padding: 40px 50px 75px 475px;
 }
 
 .content {
-	margin: 75px 50px 50px 50px;
-  	padding: 75px 50px 50px 50px;
+	margin-top: 50px;
+	margin-right: 50px;
+  	padding: 50px;
  }

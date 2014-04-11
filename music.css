@@ -1,26 +1,46 @@
-article {
-  font-size: 36px;
+body {
+  border: none;
 }
 
-.flex-box {
+.flex-box ul {
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.flex-box li {
   	list-style: none;
-  	display: inline-flex;
-    flex-flow: 'row wrap';
-  	justify-content: space-around;
+  	display: inline;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #888;
+}
+
+section {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
 
 }
 
-.flex-pic {
-  	width: 450px;
-  	height: 250px;
-  	line-height: normal;
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
-.musicalasidelft {
-  float: left;
-
+.flex-pic:hover {
+  opacity: 0.3;
 }
 
-.musicalasideright {
-  float: right; 
+.musicmags a {
+  border: none;
+  box-shadow: none;
+}
+
+.musicmags {
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.footer {
+  margin-right: 20px
 }

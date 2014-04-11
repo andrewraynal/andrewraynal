@@ -17,7 +17,6 @@ header {
 	width: 1200px;
 	display: inline-block;
 	text-align: center;
-
 }
 
 h1 {
@@ -25,12 +24,14 @@ h1 {
 	color: #F0F8FF;
 	font-size: 60px;
 	padding-top: 35px;
+	
 }
 
 h2 {
 	text-shadow: 2px 2px #000;
 	color: #F0F8FF;
 	font-size: 24px;
+
 }
 
 h3 {
@@ -43,7 +44,7 @@ h3 {
 	font-size: 36px;
 	list-style-type: none;
 	display: inline;
-	height:30px;
+	height:45px;
 	text-align: center;
 	width:100%;
 }
@@ -58,7 +59,7 @@ h3 {
 
 a {
 	border-style: solid;
-	border-color: #000;
+	border-color: #000;	
 	text-decoration: none;
 	text-shadow: 1px 1px #000;
 	font-style: bold;
@@ -87,6 +88,10 @@ article {
 	display: inline;
 }
 
+.top-list {
+	padding-right: 60px;
+} 
+
 .pics {
 	list-style-type: none;
 	text-align: center;
@@ -103,33 +108,32 @@ article {
 .content {
 	background: url(abstract.jpg);
 	height: 50px;
-	width: 1200px;
+	width: 1175px;
 	color: #F0F8FF;
 	text-shadow: 2px 2px #000;
-	display: inline-block;
 	text-align: center;
-  	padding: 30px;
+	display: inline-block;
+  	padding: 40px;
 	font-size: 48px;
-
+	line-height: 70px;
 }
 
 .footer {
-  padding: 20px 0;
-  text-align: center;
+	text-align: center;
 
 }
 
 .social {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  margin: 0 10px;
-  line-height: 70px;
-  font-size: 60px;
-  text-align: center;
-  border-radius: 50%;
-  background: #eee;
-  overflow: hidden;
+  	display: inline-block;
+  	width: 70px;
+  	height: 70px;
+  	margin: 0 10px;
+  	line-height: 70px;
+  	font-size: 60px;
+  	text-align: center;
+  	border-radius: 50%;
+  	background: #eee;
+  	overflow: hidden;
 }
 
 
