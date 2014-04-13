@@ -14,18 +14,18 @@
 }
 
 .navcontainer a, .albumcontainer a {
+	box-shadow: none;
 	border-style: none;
 }
 
 .albumcontainer {
 	width: 100%;
-	margin: 0 auto;
 	display: inline-block;
 }
 
 .albumcontainer ul {
-	margin-left: 31.5%;
-	margin-top: 5%;
+	margin-left: 300px;
+	margin-top: 20px;
 }
 
 .albumcontainer li {
@@ -35,17 +35,17 @@
 
 /*jquery*/
 
-.album1, .album2, .album3, .album4, .album5, .album6, .album7 {
-	display:none;
+.spain, .italy, .argentina, .peru, .poland, .brazil, .egypt {
+	display: none;
 }
 
 .show {
-	display:inline-block;
+	display: inline-block;
 }
 
-ul li a img.magnify {
-	width:400px;
-	height:400px;
+ul li a img .magnify {
+	width: 500px;
+	height: 500px;
 }
 
 .hide {
