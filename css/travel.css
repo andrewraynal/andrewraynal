@@ -39,8 +39,18 @@
 	display: none;
 }
 
+.hide {
+	display: none;
+}
+
 .show {
 	display: inline-block;
+}
+
+.show img {
+	display: inline-block;
+	position: auto;
+
 }
 
 ul li a img .magnify {
@@ -48,6 +58,3 @@ ul li a img .magnify {
 	height: 500px;
 }
 
-.hide {
-	display: none;
-}
