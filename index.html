@@ -1,49 +1,416 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Andrew Raynal</title>
-	<link rel="stylesheet" type="text/css" href="css/globalstylesheet.css">
-	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+    <title>Andrew Raynal | Front End Developer</title>
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="cleartype" content="on">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+<link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+<meta name="msapplication-TileColor" content="#222222">
+   <!-- For all browsers -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <!-- JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/modernizr.custom.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Montserrat:400,700:latin' ] }
+            };
+            (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+            })(); 
+             WebFontConfig = {
+            google: { families: [ 'Raleway:400,600,800:latin' ] }
+            };
+            (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+            })(); 
+    </script>
+    <script>
+        function onHover(){
+            $("#face").attr('src', 'images/tiyface.jpg');
+        }
+        function offHover(){
+            $("#face").attr('src', 'images/surprise.jpg');
+        }
+    </script>
+    <!-- For everything else -->
+    <link href="/favicon.ico" rel="shortcut icon"><!--iOS -->
+    <!-- Prevents links from opening in mobile Safari -->
+    <!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
 </head>
+
 <body>
-	<div class="container">
-	<header>
-		<h1>Andrew | The Basics</h1>
-		<h2>One of my many TIY Projects, Spring 2014</h2>
-	</header>
-		<nav>
-			<ul class="top-menu">
-				<li class="nav-links"><a href="index.html">Home</a></li>
-				<li class="nav-links"><a href="lafamilia.html">Family</a></li>
-				<li class="nav-links"><a href="travel.html">Travels</a></li>
-				<li class="nav-links"><a href="music.html">Music</a></li>
-				<li class="nav-links"><a href="work.html">Work</a></li>
-				<li class="nav-links"><a href="other.html">Other good stuff</a></li>	
-			</ul>		
-		</nav>	
-		<h3>Explore. Remember to breathe too.</h3>
-	<div class="top-pics">
-		<ul class="top-list">
-			<li class="pics"><img src="images/EvylineWadmalaw.jpeg" ></li>
-			<li class="pics"><img src="images/meditatingdog.jpeg"></li>
-			<li class="pics"><img src="images/sunnywoods.jpeg" ></li>
-		</ul>
-	</div>
-		<article>	
-			I'm new to programming, but thanks to The Iron Yard (TIY) I should be a whiz in a few weeks.  I'm stoked about learning more and the opportunities in front of me and others at TIY.
-		</article>	
-<div>| Be My Virtual Pal |
-	<div class="footer">
-  		<div class="social">
-  			<a href="https://www.facebook.com/profile.php?id=49501884" target="_blank" align="left"><img src="http://www.niftybuttons.com/blackink/facebook.png"></a>
-  		</div>
-  		<div class="social"><a href="https://twitter.com/AndrewRaynal" target="_blank" align="left"><img src="http://www.niftybuttons.com/blackink/twitter.png"></a>
-  		</div>
-  		<div class="social"><a href="https://www.linkedin.com/profile/guided?goback=%2Enmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1%2Enpv_266305896_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_spm*4pic_*&trk=optimize-started-prof_promo-nprofile_self" target="_blank" align="left"><img src="http://www.niftybuttons.com/blackink/linkedin.png"></a>
-  		</div>
-	</div>
-</div>
-</div>
+    <div class="header">
+        <div class="title-col" id="home">
+            <h1>Andrew Raynal</h1>
+
+            <h2>Front End Developer</h2>
+        </div>
+
+        <div class="myface" id="myface"><img alt="logo" class="face" id="face"
+        onmouseout="offHover();" onmouseover="onHover();" src=
+        "images/tiyface.jpg"></div>
+    </div>
+
+    <ul class="menu">
+        <li>
+            <a class="me" href="#me"></a>
+        </li>
+        <li>
+            <a class="phone" href="#phone"></a>
+        </li>
+        <li>
+            <a class="email" href="#email"></a>
+        </li>
+        <li>
+            <a class="uno" href="#resume"></a>
+        </li>
+        <li>
+            <a class="portfolio" href="#portfolio"></a>
+        </li>
+        <li>
+            <a class="github" href="https://www.github.com/andrewraynal"></a>
+        </li>
+        <li>
+            <a class="linkedin" href=
+            "https://www.linkedin.com/in/andrewraynal"></a>
+        </li>
+        <li>
+            <a class="twitter" href="https://www.twitter.com/andrewraynal"></a>
+        </li>
+    </ul>
+
+    <div class="section1 developer-div" id="me section1">
+        <div class="developer-desc am">
+            <p class="am-desc">Smile. I'm a Front End Developer in Charleston,SC. I build efficient and eye-catching apps that help people. I'd like to help you bring your software ideas to reality.</p>
+        </div>
+
+        <div class="use">
+            <a href="http://theironyard.com"><img class="tiylogo" src="images/logo.png"></a>
+
+            <p class="use-desc">The Iron Yard introduced me to this pretty cool
+            toolset. Here's what I use:</p>
+
+            <div class="logos">
+                <article class="javascript" id="logo">
+                <p class="type">JavaScript</p>
+
+                    <h3><img class="javascript" src=
+                    "images/Javascript.png"></h3>
+                </article>
+
+                <article class="angular" id="logo">
+                    <p class="type">AngularJS</p>
+
+                    <h3><img class="angular" src="images/angular.png"></h3>
+                </article>
+
+                <article class="underscore" id="logo">
+                 
+                    <p class="type"></p>
+
+                    <h3><img class="underscore" src=
+                    "images/underscore.png"></h3>
+                </article>
+
+                <article class="jquery" id="logo">
+         
+                    <p class="type">JQuery</p>
+
+                    <h3><img class="jquery" src="images/jquery.png"></h3>
+                </article>
+
+                <article class="jasmine" id="logo">
+                    <p class="type">Unit Testing</p>
+
+                    <h3><img class="jasmine" src="images/jasmine.png">
+                    <img class="mocha" src="images/mocha.png"></h3>
+                </article>
+
+                <article class="git" id="logo">
+                    <p class="type">Version Control</p>
+
+                <h3><img class="githubcat" src=
+                    "images/githubcat.png"></h3>
+                </article>
+
+                <article class="firebase" id="logo">
+                    <p class="type">Backend DB</p>
+                    <h3><img class="firebase" src="images/firebase.png"></h3>
+                </article>
+
+                <article class="mong" id="logo">
+                    <p class="type"></p>
+
+                    <h3><img class="mongo" src="images/heroku.png"> <img class=
+                    "mongo" src="images/mongo.png"></h3>
+                </article>
+
+                <article class="bootstrap" id="logo">
+                    <p class="type">Twitter Bootstrap</p>
+
+                    <h3><img class="bootstrap" src="images/bootstrap.png"></h3>
+                </article>
+
+                <article>
+                    <p class="type">UI / UX</p>
+
+                    <h3><img class="html5css3" src=
+                    "images/css3-html5.png"></h3>
+                </article>
+                <p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2 contain-thumbs" id="portfolio">
+        <div class="title-col">
+            <h2>Portfolio</h2>
+        </div>
+
+        <ul class="thumbs" id="thumbs">
+            <li>
+                <a href="http://ahealthynetwork.firebaseapp.com/"><img alt=
+                "A Healthier Network" class="thumbnail" src=
+                "http://fillmurray.com/300/200">
+
+                <div class="description">
+                    <h4>Balanced</h4>
+
+                    <p>Holistic health, social network</p>
+                </div></a>
+            </li>
+
+            <li>
+                <a href="http://github.io/andrewraynal"><img class="thumbnail"
+                src="http://fillmurray.com/300/200">
+
+                <div class="description">
+                    <h4>Bypass.</h4>
+
+                    <p>Travel app providing best alternative routes</p>
+                </div></a>
+            </li>
+
+            <li>
+                <a href="http://andrewraynal.github.io"><img class="thumbnail"
+                src="http://fillmurray.com/300/200">
+
+                <div class="description">
+                    <h4>To do</h4>
+
+                    <p>the requisite to-do app</p>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section3" id="resume">
+        <div class="title-col">
+            <h2>Resume</h2>
+        </div>
+
+        <div class="resume">
+            <div class="intro">
+                <div class="resume-header">
+                    <h1>Andrew Raynal</h1>
+                </div>
+
+                <div class="contact-info">
+                    <p class="info">116 Charleston Blvd. | Isle of Palms, SC
+                    29451 | (864) 923-0201 | andrewraynal@gmail.com</p>
+                </div>
+
+                <div class="summary">
+                    <p><em>Prior to becoming a Front End Developer, I worked as
+                    a lawyer in various capacities. As a result, I am an
+                    experienced problem solver, communicator, manager and
+                    diligent worker. I understand the bottom line and the
+                    importance of surpassing and managing client expectations
+                    while maintaining balance and efficiency in the
+                    workplace.</em></p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="heading">
+                    <h2>Skills:</h2>
+                </div>
+
+                <div class="list-skills scripts">
+                    <ul class="skills">
+                        <li>AngularJS</li>
+
+                        <li>jQuery</li>
+
+                        <li>Underscore.js</li>
+
+                        <li>Jasmine and Mocha (unit testing)</li>
+
+                        <li>Git &amp; GitHub (version control &amp; team
+                        workflow)</li>
+
+                        <li>HTML5</li>
+
+                        <li>CSS3</li>
+
+                        <li>Firebase as a backend for AngularJS apps</li>
+
+                        <li>AJAX - JSON &amp; JSONP</li>
+
+                        <li>Scaffolding tools: Yeoman, Grunt, &amp; Bower</li>
+
+                        <li>MongoDB and MongoLab for data storage and
+                        structure</li>
+
+                        <li>Heroku</li>
+
+                        <li>Twitter Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="experience">
+                    <div class="heading">
+                        <h2>Previous Experience</h2>
+                    </div>
+
+                    <div class="prev-employer">
+                        <h3>Moveable Covers, LLC, Mount Pleasant, SC</h3>
+
+                        <p><em>Junior Director - August 2013 - December
+                        2013</em></p>
+
+                        <ul class="job-desc">
+                            <li>Managed daily operations of a startup business
+                            that designs, builds, sells and installs
+                            steel­-framed, movable canopies for outdoor
+                            venues</li>
+                        </ul>
+                    </div>
+
+                    <div class="prev-employer">
+                        <h3>Nelson Mullins Riley Scarborough, LLP, Columbia,
+                        SC</h3>
+
+                        <p><em>Staff Attorney - June 2011 - June 2013</em></p>
+
+                        <ul class="job-desc">
+                            <li>Coordinated and managed 200+ attorneys and
+                            legal personnel</li>
+
+                            <li>Managed processes and productions of millions
+                            of pages of data</li>
+
+                            <li>Implemented project training and monitored
+                            progress to ensure adherence to production
+                            deadlines set by federal and state Courts and
+                            clients</li>
+                        </ul>
+                    </div>
+
+                    <div class="prev-employer">
+                        <h3>Hire Counsel, Inc; Columbia, SC</h3>
+
+                        <p><em>Contract Attorney — May 2010 - June
+                        2011</em></p>
+
+                        <ul class="job-desc">
+                            <li>Reviewed, analyzed and classified thousands of
+                            confidential discovery documents for Nelson Mullins
+                            Riley Scarborough, LLP</li>
+                        </ul>
+                    </div>
+
+                    <div class="prev-employer">
+                        <h3>Svalina Law Firm, PA; Beaufort, SC</h3>
+
+                        <p><em>Associate Attorney — September 2008 - February
+                        2010</em></p>
+
+                        <ul class="job-desc">
+                            <li>Analyzed and litigated civil and criminal cases
+                            in South Carolina’s state courts</li>
+
+                            <li>Managed clients, assistants and paralegals
+                            throughout various lawsuits</li>
+
+                            <li>Negotiated settlements</li>
+                        </ul>
+                    </div>
+
+                    <div class="prev-employer">
+                        <h3>The Honorable James W. Johnson, Jr. of the 8th
+                        Judicial Circuit of South Carolina</h3>
+
+                        <p><em>Law Clerk — August 2007 - August 2008</em></p>
+
+                        <ul class="job-desc">
+                            <li>Researched and drafted orders and memoranda for
+                            the Judge on substantive laws in South Carolina’s
+                            state courts</li>
+
+                            <li>Facilitated communication between the Judge and
+                            case counsel</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <div class="heading">
+                        <h2>Education</h2>
+                    </div>
+
+                    <div class="education">
+                        <h3>The Iron Yard Academy, Mount Pleasant, SC | Front End Engineering</h3>
+                        <h3>Charleston School of Law, Charleston, SC | JD</h3>
+                        <h3>Presbyterian College, Clinton, SC | BA - Spanish</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backtotop">
+                <a href="#home"><img src="images/arrow-27-32.png"></a>
+            </div>
+        </div>
+
+        <div class="footer clearfix" id="footer">
+                <div class="footer-content">
+                    <a class="copyright" href="http://andrew.uno">© 2014 andrew.uno</a>
+                    <a class="twitter-follow-button" data-dnt="true"
+                    data-show-count="false" data-size="large" href=
+                    "https://twitter.com/andrewraynal">Follow @andrewraynal</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+        </div>
+    </div>
 </body>
 </html>

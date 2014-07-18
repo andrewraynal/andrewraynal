@@ -1,0 +1,394 @@
+html, body, div, span,
+h1, h2, h3, h4, p, a, 
+em, img, ol, ul, li, nav {
+margin: 0;
+padding: 0;
+font: inherit;
+font-size: 100%;
+}
+html {
+font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+list-style: none;
+}
+li {
+border-radius: 1%;
+}
+a {
+text-decoration: none;
+}
+h1 {
+line-height: 70px;
+font-size: 70px;
+}
+h2 {
+line-height: 30px;
+font-size: 30px;
+}
+.header {
+    background: rgba(0, 0, 0, 1);
+    color: #f8f8f8;
+    box-shadow: 1px 1px 1px #565556;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+}
+.title-col {
+    padding: 30px;
+    letter-spacing: 4px;
+}
+.myface, #myface {
+top: 2%;
+right: 5%;
+position: absolute;
+-webkit-margin-before: 10px;
+-webkit-margin-after: 10px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 20px;
+line-height: 20px;
+-webkit-font-smoothing: antialiased;
+}
+.myface img{
+width: 120px;
+height: 120px;
+display: block;
+border-radius: 100%;
+box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 1);
+background-color: transparent;
+opacity: 1;
+transition: opacity .3s ease-in-out;
+-moz-transition: opacity .3s ease-in-out;
+-webkit-transition: opacity .3s ease-in-out;
+}
+.myface img:hover{
+opacity: .4;
+}
+/*developer div*/
+.developer-desc {
+  text-align: center;
+  width: 100%;
+  min-height: 900px;
+  font-size: 24px;
+  background: url(../images/EvylineWadmalaw.jpeg) no-repeat;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+.am-desc {
+   width: 80%;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-left: 100px;
+    padding: 100px;
+}
+.use-desc {
+    width: 65%;
+    height: 100%;
+    color: #505050;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 auto;  
+    text-align: center;
+}
+.use img.tiylogo {
+  margin-top: 25px;
+  margin-left: 120px;
+}
+div.logos {
+-moz-column-count: 2;
+-moz-column-gap: 0;
+-webkit-column-count: 2;
+-webkit-column-gap: 0;
+column-count: 2;
+column-gap: 0;
+width: 85%;
+height: 100%;
+margin: 15px auto;
+}
+.logos {
+  padding: 25px;
+  max-height: 500px;
+  border: 1px 1px 1px #eee;
+  box-shadow: 3px 3px #eee;
+  overflow-y: scroll;
+}
+#logo h3 p, #logo h2 p {
+  font-size: 22px;
+
+}
+article {
+  font-size: 24px;
+background-color: #fff;
+background-size: 100%;
+color: rgb(43, 43, 45);
+cursor: pointer;
+display: block;
+line-height: 22px;
+padding: 10px;
+text-align: center;
+vertical-align: baseline;
+}
+p.type {
+
+  padding-bottom: 5px;
+}
+.logos article img {
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #eee;
+  border-shadow: 2px 2px 2px;
+}
+
+/*ul.logos{
+  width: 400px;
+  margin-left: 125px;
+  text-align: left;
+}
+ul.logos li {
+  padding: 3px;
+  float:left;
+  background-color: rgba(250, 250, 250, 0.9);
+  background-size: 100%;
+}
+ul.logos li img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border: 3px solid #eee;
+}
+ul.logos li p{
+  text-align: center;
+  margin: -100px 0px 2px 1px;
+  position: absolute;
+  color: #05364B;
+}*/
+.logos article img.firebase,
+.logos article img.jasmine, 
+.logos article img.mocha,
+.logos article img.mongo {
+  width: 200px;
+  height: 80px;
+}
+.logos article img.underscore,
+.logos article img.html5css3 {
+  width: 200px;
+  height: 100px;
+}
+/*project thumb section*/
+.title-col {
+  text-align: center;
+}
+.contain-thumbs {
+    margin: 0 auto;
+  }
+.thumbs {
+    margin: 15px;
+    margin-left: 200px;
+    padding: 15px;
+}
+.thumbs li {
+background: rgba(255, 255, 255, 0.8);
+padding: 25px;
+display: inline-block;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 5px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio, #me {
+width: 100%;
+min-height: 500px;
+background-size: 100% 100%;
+}
+#resume {
+height: 100%;
+width: 85%;
+background-size: 100% 100%;
+margin-left: 130px;
+letter-spacing: 2px;
+}
+#resume h1, #resume h2 {
+  font-weight: 800;
+}
+.resume-header {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+.contact-info {
+  text-align: center;
+  padding: 5px;
+}
+.summary{
+  text-align: center;
+    padding: 5px;
+}
+.skills {
+  text-align: left;
+    padding: 5px;
+}
+ul.skills {
+  list-style-type: circle;
+  margin-left: 35px;
+  padding: 5px;
+}
+.skills li {
+  padding: 3px;
+}
+div.scripts {
+  -moz-column-count: 2;
+-moz-column-gap: 0;
+-webkit-column-count: 2;
+-webkit-column-gap: 0;
+column-count: 2;
+column-gap: 0;
+padding: 5px;
+}
+.experience {
+  padding: 10px;
+}
+.prev-employer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+}
+.prev-employer p {
+  margin-left: 10px;
+}
+.prev-employer ul {
+  margin-left: 25px;
+  padding: 3px;
+}
+.prev-employer ul li {
+  padding: 3px;
+}
+.job-desc li{
+  list-style-type: circle;
+  margin-left: 20px;
+}
+.education h3 {
+  padding: 5px;
+  margin-left: 25px;
+    font-size: 18px;
+}
+.education p {
+  padding: 5px;
+  margin-left: 10px;
+}
+.backtotop {
+margin-left: 1225px;
+
+}
+.backtotop img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: solid 10px #47a3da;
+}
+/*footer */
+.footer {
+background: rgba(0, 0, 0, 1);
+background-size: 100%;
+height: 100px;
+font-size: 14px;
+font-size: 1.4rem;
+text-decoration: none;
+}
+.footer-content {
+  margin-left: 110px;
+}
+.copyright {
+  color: #eee;
+}
+.twitter-follow-button {
+    margin-top: 20px;
+    margin-left: 900px;
+}
+.menu {
+position: fixed;
+overflow: hidden;
+top: 0;
+left: 0;
+height: 100%;
+list-style-type: none;
+margin: 0;
+padding: 0;
+background: rgba(0, 0, 0, 1);
+}
+.menu li {
+
+}
+.menu li a {
+display: block;
+height: 100px;
+width: 100px;
+line-height: 5em;
+text-align: center;
+color: #999;
+position: relative;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+-webkit-transition: background 0.1s ease-in-out;
+-moz-transition: background 0.1s ease-in-out;
+transition: background 0.1s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li:first-child a{
+background: #47a3da;
+color: #fff;
+}
+.menu li a:before {
+font-style: normal;
+font-weight: normal;
+text-indent: 0em;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+font-size: 22px;
+-webkit-font-smoothing: antialiased;
+}
+.menu li a:before {
+top: 20%;
+padding: 3px;
+}
+.menu li a.me:before {
+content: "andrew.";
+font-weight: 700;
+top: 0;
+}
+.phone:before {
+content: url(../images/mobile-phone-8-48.png);
+}
+.email:before {
+content: url(../images/email-48.png);
+}
+.uno:before {
+content: url(../images/about-me-3-48.png);
+}
+.portfolio:before {
+content: url(../images/dossier-48.png);
+}
+.twitter:before {
+content: url(../images/twitter-48.png);
+}
+.linkedin:before {
+content: url(../images/linkedin-48.png);
+}
+.github:before {
+content: url(../images/github-6-48.png);
+}
+
+/* Example for media query (depends on total height of menu) */
+@media screen and (max-height: 34.9375em) { 
+
