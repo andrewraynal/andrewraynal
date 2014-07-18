@@ -1,28 +1,26 @@
 html, body, div, span,
 h1, h2, h3, h4, p, a, 
 em, img, ol, ul, li, nav {
-margin: 0;
-padding: 0;
-font: inherit;
-font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  font-family: 'Raleway', sans-serif;
 }
-html {
-font-family: 'Raleway', sans-serif;
-}
-ol, ul {
-list-style: none;
+ul, ol {
+  list-style: none;
 }
 li {
-border-radius: 1%;
+  border-radius: 1%;
 }
 a {
-text-decoration: none;
+  text-decoration: none;
 }
-h1 {
-line-height: 70px;
-font-size: 70px;
+.header h1 {
+  line-height: 70px;
+  font-size: 70px;
 }
-h2 {
+.header h2 {
 line-height: 30px;
 font-size: 30px;
 }
@@ -214,10 +212,15 @@ height: 100%;
 width: 85%;
 background-size: 100% 100%;
 margin-left: 130px;
+line-height: 20px;
 letter-spacing: 2px;
 }
-#resume h1, #resume h2 {
+#resume h1 {
   font-weight: 800;
+}
+#resume h2, #portfolio h2 {
+  font-size: 20px;
+  font-size: 2em;
 }
 .resume-header {
   text-align: center;
@@ -227,6 +230,10 @@ letter-spacing: 2px;
 .contact-info {
   text-align: center;
   padding: 5px;
+}
+.heading {
+  margin: 5px;
+  padding: 15px;
 }
 .summary{
   text-align: center;
@@ -238,7 +245,7 @@ letter-spacing: 2px;
 }
 ul.skills {
   list-style-type: circle;
-  margin-left: 35px;
+  margin-left: 50px;
   padding: 5px;
 }
 .skills li {
@@ -260,29 +267,32 @@ padding: 5px;
   font-size: 20px;
   font-weight: 600;
   padding: 5px;
+  margin-left: 25px;
 }
 .prev-employer p {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .prev-employer ul {
   margin-left: 25px;
-  padding: 3px;
+  padding: 5px;
 }
 .prev-employer ul li {
+  margin-left: 25px;
   padding: 3px;
 }
 .job-desc li{
   list-style-type: circle;
   margin-left: 20px;
 }
+
 .education h3 {
   padding: 5px;
+  font-size: 18px;
   margin-left: 25px;
-    font-size: 18px;
 }
 .education p {
   padding: 5px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .backtotop {
 margin-left: 1225px;
