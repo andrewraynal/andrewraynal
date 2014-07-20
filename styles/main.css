@@ -1,11 +1,14 @@
-html, body, div, span,
+
+html, body, div,
 h1, h2, h3, h4, p, a, 
 em, img, ol, ul, li, nav {
   margin: 0;
   padding: 0;
   font: inherit;
   font-size: 100%;
-  font-family: 'Raleway', sans-serif;
+  }
+html {
+   font-family: 'Raleway', sans-serif;
 }
 ul, ol {
   list-style: none;
@@ -15,6 +18,12 @@ li {
 }
 a {
   text-decoration: none;
+}
+.mobile-only, .mobile-header, .logo-list {
+  display: none;
+}
+.header, .menu, .section1, .section2, .section3, .section4 {
+  margin-left: 100px;
 }
 .header h1 {
   line-height: 70px;
@@ -26,303 +35,41 @@ font-size: 30px;
 }
 .header {
     background: rgba(0, 0, 0, 1);
+    background-size: 100%;
     color: #f8f8f8;
     box-shadow: 1px 1px 1px #565556;
     text-align: center;
     text-shadow: 1px 1px 1px #fff;
 }
+
 .title-col {
     padding: 30px;
     letter-spacing: 4px;
+    border-bottom: 3px solid #000;
+    margin: 0 50px;
 }
 .myface, #myface {
-top: 2%;
-right: 5%;
-position: absolute;
--webkit-margin-before: 10px;
--webkit-margin-after: 10px;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
--webkit-padding-start: 20px;
-line-height: 20px;
--webkit-font-smoothing: antialiased;
+  top: 2%;
+  right: 5%;
+  position: absolute;
+  line-height: 20px;
 }
 .myface img{
-width: 120px;
-height: 120px;
-display: block;
-border-radius: 100%;
-box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 1);
-background-color: transparent;
-opacity: 1;
-transition: opacity .3s ease-in-out;
--moz-transition: opacity .3s ease-in-out;
--webkit-transition: opacity .3s ease-in-out;
+  width: 120px;
+  height: 120px;
+  display: block;
+  border-radius: 100%;
+  box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 1);
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
 }
 .myface img:hover{
-opacity: .4;
+  opacity: .7;
 }
-/*developer div*/
-.developer-desc {
-  text-align: center;
-  width: 100%;
-  min-height: 900px;
-  font-size: 24px;
-  background: url(../images/EvylineWadmalaw.jpeg) no-repeat;
-  background-size: 100%;
-  margin: 0;
-  padding: 0;
-}
-.am-desc {
-   width: 80%;
-    color: #fff;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-left: 100px;
-    padding: 100px;
-}
-.use-desc {
-    width: 65%;
-    height: 100%;
-    color: #505050;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin: 0 auto;  
-    text-align: center;
-}
-.use img.tiylogo {
-  margin-top: 25px;
-  margin-left: 120px;
-}
-div.logos {
--moz-column-count: 2;
--moz-column-gap: 0;
--webkit-column-count: 2;
--webkit-column-gap: 0;
-column-count: 2;
-column-gap: 0;
-width: 85%;
-height: 100%;
-margin: 15px auto;
-}
-.logos {
-  padding: 25px;
-  max-height: 500px;
-  border: 1px 1px 1px #eee;
-  box-shadow: 3px 3px #eee;
-  overflow-y: scroll;
-}
-#logo h3 p, #logo h2 p {
-  font-size: 22px;
+/*menu*/
 
-}
-article {
-  font-size: 24px;
-background-color: #fff;
-background-size: 100%;
-color: rgb(43, 43, 45);
-cursor: pointer;
-display: block;
-line-height: 22px;
-padding: 10px;
-text-align: center;
-vertical-align: baseline;
-}
-p.type {
-
-  padding-bottom: 5px;
-}
-.logos article img {
-  padding: 15px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid #eee;
-  border-shadow: 2px 2px 2px;
-}
-
-/*ul.logos{
-  width: 400px;
-  margin-left: 125px;
-  text-align: left;
-}
-ul.logos li {
-  padding: 3px;
-  float:left;
-  background-color: rgba(250, 250, 250, 0.9);
-  background-size: 100%;
-}
-ul.logos li img {
-  width: 80px;
-  height: 80px;
-  display: block;
-  border: 3px solid #eee;
-}
-ul.logos li p{
-  text-align: center;
-  margin: -100px 0px 2px 1px;
-  position: absolute;
-  color: #05364B;
-}*/
-.logos article img.firebase,
-.logos article img.jasmine, 
-.logos article img.mocha,
-.logos article img.mongo {
-  width: 200px;
-  height: 80px;
-}
-.logos article img.underscore,
-.logos article img.html5css3 {
-  width: 200px;
-  height: 100px;
-}
-/*project thumb section*/
-.title-col {
-  text-align: center;
-}
-.contain-thumbs {
-    margin: 0 auto;
-  }
-.thumbs {
-    margin: 15px;
-    margin-left: 200px;
-    padding: 15px;
-}
-.thumbs li {
-background: rgba(255, 255, 255, 0.8);
-padding: 25px;
-display: inline-block;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 5px;
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box;
--webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
--moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
-}
-
-#portfolio, #me {
-width: 100%;
-min-height: 500px;
-background-size: 100% 100%;
-}
-#resume {
-height: 100%;
-width: 85%;
-background-size: 100% 100%;
-margin-left: 130px;
-line-height: 20px;
-letter-spacing: 2px;
-}
-#resume h1 {
-  font-weight: 800;
-}
-#resume h2, #portfolio h2 {
-  font-size: 20px;
-  font-size: 2em;
-}
-.resume-header {
-  text-align: center;
-  font-size: 40px;
-  padding: 10px;
-}
-.contact-info {
-  text-align: center;
-  padding: 5px;
-}
-.heading {
-  margin: 5px;
-  padding: 15px;
-}
-.summary{
-  text-align: center;
-    padding: 5px;
-}
-.skills {
-  text-align: left;
-    padding: 5px;
-}
-ul.skills {
-  list-style-type: circle;
-  margin-left: 50px;
-  padding: 5px;
-}
-.skills li {
-  padding: 3px;
-}
-div.scripts {
-  -moz-column-count: 2;
--moz-column-gap: 0;
--webkit-column-count: 2;
--webkit-column-gap: 0;
-column-count: 2;
-column-gap: 0;
-padding: 5px;
-}
-.experience {
-  padding: 10px;
-}
-.prev-employer h3 {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 5px;
-  margin-left: 25px;
-}
-.prev-employer p {
-  margin-left: 30px;
-}
-.prev-employer ul {
-  margin-left: 25px;
-  padding: 5px;
-}
-.prev-employer ul li {
-  margin-left: 25px;
-  padding: 3px;
-}
-.job-desc li{
-  list-style-type: circle;
-  margin-left: 20px;
-}
-
-.education h3 {
-  padding: 5px;
-  font-size: 18px;
-  margin-left: 25px;
-}
-.education p {
-  padding: 5px;
-  margin-left: 30px;
-}
-.backtotop {
-margin-left: 1225px;
-
-}
-.backtotop img {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: solid 10px #47a3da;
-}
-/*footer */
-.footer {
-background: rgba(0, 0, 0, 1);
-background-size: 100%;
-height: 100px;
-font-size: 14px;
-font-size: 1.4rem;
-text-decoration: none;
-}
-.footer-content {
-  margin-left: 110px;
-}
-.copyright {
-  color: #eee;
-}
-.twitter-follow-button {
-    margin-top: 20px;
-    margin-left: 900px;
-}
 .menu {
 position: fixed;
 overflow: hidden;
@@ -333,6 +80,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 background: rgba(0, 0, 0, 1);
+background-size: 100%;
 }
 .menu li {
 
@@ -398,7 +146,338 @@ content: url(../images/linkedin-48.png);
 .github:before {
 content: url(../images/github-6-48.png);
 }
+/*developer div*/
+.developer-desc {
+  text-align: center;
+  width: 100%;
+  height: 1250px;
+  font-size: 24px;
+  background: url(../images/EvylineWadmalaw.jpeg) no-repeat;
+  background-size: cover;
+}
+.am-desc {
+  width: 80%;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 100px;
+}
+.skills-logos {
+  text-align: center;
+  width: 100%;
+  height: 850px;
+}
+.skills-logos .title-col {
+  font-size: 30px;
+  text-align: left;
+}
+.use-desc {
+  color: #505050;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 5px 200px;
+  padding: 25px;  
+  text-align: center;
+}
+.logos {
+  -moz-column-count: 2;
+  -moz-column-gap: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0;
+  column-count: 2;
+  column-gap: 0;
+  margin: 5px 150px;
+  border: 1px 1px 1px #eee;
+  box-shadow: 3px 3px #eee;
+  max-height: 600px;
+  overflow: auto;
+  background: scroll;
+  background-color: rgba(71,163,218,0.2);
+  border: solid 2px #fff;
+  box-shadow: 2px 2px 2px #ddd;
+}
+#logo p {
+  font-size: 24px;
+}
+p.type {
+  padding-bottom: 5px;
+}
+.logos div img {
+  width: 100px;
+  height: 100px;
+  border: solid #fff 1px;
+  box-shadow: 2px 2px 2px;
+}
+.logos div img.firebase,
+.logos div img.jasmine, 
+.logos div img.mongo {
+  width: 300px;
+  height: 100px;
+}
+.logos div img.mocha {
+  width: 300px;
+  height: 125px;
+}
+.logos div img.underscore {
+  width: 300px;
+  height: 125px;
+}
+.logos div img.html5css3 {
+  width: 350px; 
+  height: 150px;
+}
 
-/* Example for media query (depends on total height of menu) */
-@media screen and (max-height: 34.9375em) { 
+/*project thumb section*/
+.thumbs ul {
+  background: rgba(49,152,140,0.2);
+  margin: 25px 25px 25px 50px;
+}
+.thumbs li {
+  width: 280px;
+  height: 280px;
+  margin: 15px 25px 25px 25px;
+  background: rgba(255, 255, 255, 1);
+  padding: 25px;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.thumbs a {
+  color: #000;
+}
+.thumbnail {
+  height: 230px;
+  width: 260px;
+}
+.pdf-resume {
+  display: none;
+  background: url(../images/surprise.jpg);
+  background-size: 20px 20px;
+}
+#resume h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+#resume h2, #portfolio h2 {
+  font-size: 30px;
+}
+.resume {
+  margin: 30px 30px;
+}
+.resume-header {
+  text-align: center;
+  margin: 0px 50px;
+}
+.contact-info {
+  text-align: center;
+  padding: 5px;
+}
+a[href^=mailto], a[href^=callto]{
+color: #47a3da;
+}
+.heading {
+  margin: 5px;
+  padding: 15px;
+}
+.summary{
+  text-align: center;
+  padding: 5px;
+}
+.skills {
+  text-align: left;
+  padding: 5px;
+}
+ul.skills {
+  list-style-type: circle;
+  margin-left: 50px;
+  padding: 5px;
+}
+.skills li {
+  padding: 3px;
+}
+div.scripts {
+  -moz-column-count: 2;
+  -moz-column-gap: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0;
+  column-count: 2;
+  column-gap: 0;
+  padding: 5px;
+}
+.experience {
+  padding: 10px;
+}
+.prev-employer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  margin-left: 25px;
+}
+.prev-employer p {
+  margin-left: 30px;
+}
+.prev-employer ul {
+  margin-left: 25px;
+  padding: 5px;
+}
+.prev-employer ul li {
+  margin-left: 25px;
+  padding: 3px;
+}
+.job-desc ul li{
+  text-align: left;
+  list-style-type: none;
+  margin-left: 20px;
+}
+.education h3 {
+  padding: 5px;
+  font-size: 18px;
+  margin-left: 25px;
+}
+.education p {
+  padding: 5px;
+  margin-left: 30px;
+}
+.backtotop {
+margin-left: 1225px;
+}
+.backtotop img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: solid 10px #47a3da;
+}
+/*footer */
+.footer {
+background: rgba(0, 0, 0, 1);
+background-size: 100%;
+height: 100px;
+font-size: 14px;
+font-size: 1.4rem;
+text-decoration: none;
+}
+.footer-content {
+  margin-left: 110px;
+}
+.copyright {
+  color: #eee;
+}
+.twitter-follow-button {
+    margin-top: 20px;
+    margin-left: 900px;
+  }
+  @media only screen and (max-device-width : 1024px) {
 
+      .twitter-follow-button {
+        margin-left: 700px;
+        margin-top: 0px;
+      }
+      .use h3 a{
+        margin: 30em;
+      }
+      .am-desc {
+         margin-left: 5%;
+    } 
+      
+    }
+  @media only screen and (max-device-width : 640px) {
+    
+    .header h1, .header h2 {
+      display: none;
+    }
+    .header {
+      display: none;
+    }
+    .mobile-header {
+      display: block;
+      text-align: center;
+      font-size: 28px;
+      background: rgba(0, 0, 0, 1);
+      position: fixed;
+      width: 100%;
+      height: auto;
+    }
+    .mobile-header h3 {
+      color: #fff;
+      display: block;
+    }
+    .mobile-header ul li {
+    display: inline-block;
+      padding: 10px;
+    }
+    .pdf-resume {
+      display: block;
+    }
+    .menu {
+      width: 20px;
+      height: auto;
+    }
+    div.logos {
+     display: none;
+    }
+    .logos div img {
+      width: 200px;
+      height: 200px;
+    }
+
+    #me {
+      padding: 0;
+    }
+
+    #resume div, #resume p, #resume ul {
+      display: none;
+    }
+    .menu, .logos div#logo {
+      display: none;
+    }
+    
+    #portfolio, #resume, .am-desc, .use-desc {
+      margin: 0 auto;
+      width: auto;
+    }
+   .developer-desc {
+      background: url(../images/AnotherFolly.jpeg) no-repeat;
+      background-size: 100%;
+    }
+    p.am-desc {
+      height: 500px;
+      margin: 0;
+      padding: 120px 20px;
+      font-size: 20px;
+    }
+    #portfolio p, #resume p, .use-desc p {
+      margin: 0 auto;
+    }
+    .twitter-follow-button {
+      padding: 0;
+      margin-left: 0;        
+      margin-top: 5px;
+      width: 40px;
+      }
+    .copyright {
+      margin: 0;
+      font-size: 12px;
+    }
+      .use h3 a{
+        display: block;
+        margin: 30em;
+      }
+      .thumbs li {
+        font-size: 14px;
+        margin: 10px 20px;
+        padding: 10px;
+        border: solid 5px #47a3da;
+        width: 65%;
+        height: auto;
+        background: rgba(0,0,0, 0.1);
+        }
+      .thumbnail {
+        width: 200px;
+        height: 150px;
+        }
+
+    }
