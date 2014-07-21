@@ -156,6 +156,7 @@ content: url(../images/github-6-48.png);
   background-size: cover;
 }
 .am-desc {
+  padding: 125px 50px;
   width: 80%;
   color: #fff;
   font-size: 30px;
