@@ -19,7 +19,7 @@ li {
 a {
   text-decoration: none;
 }
-.mobile-only, .mobile-header, .logo-list {
+.mobile-only, .mobile-header, .mobile-logos {
   display: none;
 }
 .header, .menu, .section1, .section2, .section3, .section4 {
@@ -160,7 +160,6 @@ content: url(../images/github-6-48.png);
   color: #fff;
   font-size: 30px;
   letter-spacing: 2px;
-  padding: 100px;
 }
 .skills-logos {
   text-align: center;
@@ -195,18 +194,22 @@ content: url(../images/github-6-48.png);
   background-color: rgba(71,163,218,0.2);
   border: solid 2px #fff;
   box-shadow: 2px 2px 2px #ddd;
+  letter-spacing: 3px;
 }
 #logo p {
   font-size: 24px;
 }
 p.type {
-  padding-bottom: 5px;
+  padding: 15px;
 }
 .logos div img {
   width: 100px;
   height: 100px;
+  padding: 15px;
   border: solid #fff 1px;
   box-shadow: 2px 2px 2px;
+  background: #eee;
+  border-radius: 5px;
 }
 .logos div img.firebase,
 .logos div img.jasmine, 
@@ -230,12 +233,12 @@ p.type {
 /*project thumb section*/
 .thumbs ul {
   background: rgba(49,152,140,0.2);
-  margin: 25px 25px 25px 50px;
+  margin: 25px 75px 25px 50px;
 }
 .thumbs li {
   width: 280px;
   height: 280px;
-  margin: 15px 25px 25px 25px;
+  margin: 15px 5px 25px 25px;
   background: rgba(255, 255, 255, 1);
   padding: 25px;
   display: inline-block;
@@ -342,9 +345,6 @@ div.scripts {
   padding: 5px;
   margin-left: 30px;
 }
-.backtotop {
-margin-left: 1225px;
-}
 .backtotop img {
     height: 50px;
     width: 50px;
@@ -365,19 +365,30 @@ text-decoration: none;
 }
 .copyright {
   color: #eee;
+  float: left;
+  margin: 5px;
+  padding: 5px;
 }
 .twitter-follow-button {
-    margin-top: 20px;
-    margin-left: 900px;
+    float: right;
+    margin: 10px;
+    padding: 10px;
   }
-  @media only screen and (max-device-width : 1024px) {
-
-      .twitter-follow-button {
-        margin-left: 700px;
-        margin-top: 0px;
+  @media only screen and (max-device-width : 2048px) {
+  
+      .backtotop {
+        opacity: 0.4;
+        margin: 15px; 
       }
       .use h3 a{
         margin: 30em;
+      }
+      .logos{
+        margin: 5px 100px;
+      }
+      .#logos {
+        margin: 15px;
+        padding: 15px;
       }
       .am-desc {
          margin-left: 5%;
@@ -386,10 +397,13 @@ text-decoration: none;
     }
   @media only screen and (max-device-width : 640px) {
     
+    .section1, .section2, .section3, .section4 {
+      margin: 0;
+    }
     .header h1, .header h2 {
       display: none;
     }
-    .header {
+    .header, .menu, div#logo {
       display: none;
     }
     .mobile-header {
@@ -406,47 +420,61 @@ text-decoration: none;
       display: block;
     }
     .mobile-header ul li {
-    display: inline-block;
+      display: inline-block;
       padding: 10px;
     }
-    .pdf-resume {
+    .pdf-resume a {
       display: block;
     }
-    .menu {
-      width: 20px;
-      height: auto;
+    .mobile-logos {
+      display: block;
+      border: 1px 1px 1px #eee;
+      box-shadow: 3px 3px #eee;
+      max-height: 500px;
+      overflow: auto;
+      background: scroll;
+      background-color: rgba(71,163,218,0.2);
+      border: solid 2px #fff;
+      box-shadow: 2px 2px 2px #ddd;
+      letter-spacing: 3px;
     }
-    div.logos {
-     display: none;
+    .mobile-logos li {
+      margin: 5px;
+      padding: 5px;
     }
-    .logos div img {
-      width: 200px;
-      height: 200px;
+    .mobile-logos ul li img {
+      width: 75px;
+      height: 75px;
     }
-
-    #me {
-      padding: 0;
+    .mobile-logos ul li img.mocha,
+    .mobile-logos ul li img.jasmine,
+    .mobile-logos ul li img.underscore,
+    .mobile-logos ul li img.css3html5,
+    .mobile-logos ul li img.mongo,
+    .mobile-logos ul li img.firebase {
+      width: 115px;
     }
-
     #resume div, #resume p, #resume ul {
       display: none;
     }
-    .menu, .logos div#logo {
-      display: none;
-    }
-    
-    #portfolio, #resume, .am-desc, .use-desc {
+    #me, #resume, .am-desc, .use-desc {
       margin: 0 auto;
       width: auto;
+      height: auto;
     }
    .developer-desc {
+      text-align: center;
       background: url(../images/AnotherFolly.jpeg) no-repeat;
-      background-size: 100%;
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+    }
+    .title-col {
+      margin: 0;
     }
     p.am-desc {
-      height: 500px;
       margin: 0;
-      padding: 120px 20px;
+      padding: 120px 20px 0 20px;
       font-size: 20px;
     }
     #portfolio p, #resume p, .use-desc p {
@@ -462,22 +490,24 @@ text-decoration: none;
       margin: 0;
       font-size: 12px;
     }
-      .use h3 a{
-        display: block;
-        margin: 30em;
-      }
+    .thumbs-list ul {
+      margin: 0;
+      width: 100%;
+    }
       .thumbs li {
+        width: 100%;
         font-size: 14px;
-        margin: 10px 20px;
-        padding: 10px;
+        margin: 0;
+        padding: 5px;
         border: solid 5px #47a3da;
-        width: 65%;
         height: auto;
-        background: rgba(0,0,0, 0.1);
         }
       .thumbnail {
-        width: 200px;
-        height: 150px;
+       width: 195px;
         }
-
+      .footer div {
+        display: inline;
+        padding: 0;
+        margin: 0;
+      }
     }
