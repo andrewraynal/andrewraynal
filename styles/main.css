@@ -181,9 +181,8 @@ content: url(../images/github-6-48.png);
   font-size: 30px;
   letter-spacing: 2px;
 }
-
-.am-desc h2 {
-  font-size: 40px;
+.am-desc .mission-mobile {
+  display: none;
 }
 .skills-logos {
   text-align: center;
@@ -440,6 +439,14 @@ text-decoration: none;
     .header, .menu, div#logo {
       display: none;
     }
+    .am-desc .mission {
+      display: none;
+    }
+    .am-desc .mission-mobile {
+      display: block;
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #000;
+    }
     .mobile-header {
       display: block;
       text-align: center;
@@ -467,7 +474,6 @@ text-decoration: none;
       max-height: 500px;
       overflow: auto;
       background: scroll;
-      background-color: rgba(71,163,218,0.2);
       border: solid 2px #fff;
       box-shadow: 2px 2px 2px #ddd;
       letter-spacing: 3px;
@@ -479,6 +485,7 @@ text-decoration: none;
     .mobile-logos ul li img {
       width: 75px;
       height: 75px;
+      box-shadow: 1px 1px 1px #000;
     }
     .mobile-logos ul li img.mocha,
     .mobile-logos ul li img.jasmine,
