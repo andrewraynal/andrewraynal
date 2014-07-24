@@ -49,6 +49,18 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
             })(); 
+             WebFontConfig = {
+    google: { families: [ 'Open+Sans:400,600,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
     </script>
     <!-- For everything else -->
     <link href="/favicon.ico" rel="shortcut icon"><!--iOS -->
@@ -87,7 +99,7 @@
             <a class="me" href="#me"></a>
         </li>
         <li>
-            <a class="phone" href="callto:1-864-923-0201"></a>
+            <a class="phone" href="tel:+18649230201"></a>
         </li>
         <li>
             <a class="email" href="mailto:andrewraynal@gmail.com?subject=Let's%20chat%20:)&body=Hey%20Andrew!%20I'd%20like%20you%20to%20develop%20my%20groovy%20app%20for%20me.%20Call%20me%20at..."></a>
@@ -102,8 +114,7 @@
             <a class="github" href="https://www.github.com/andrewraynal"></a>
         </li>
         <li>
-            <a class="linkedin" href=
-            "https://www.linkedin.com/in/andrewraynal"></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/andrewraynal"></a>
         </li>
         <li>
             <a class="twitter" href="https://www.twitter.com/andrewraynal"></a>
@@ -111,7 +122,9 @@
     </ul>
     <div class="section1 developer-div" id="me section1">
         <div class="developer-desc am">
-            <p class="am-desc">Smile. You found me. I'm a Front End Developer in Charleston, SC. I build efficient and eye-catching apps that help people. I solve problems.</p>
+            <div class="am-desc">
+                <h1 class="mission">Hey, thanks for dropping by!  Hover or tap that image of me up there to see what I think about that.  :)  I'm going to create positive experiences for people through front end development and design.  I'd love to hear from you if I can help you do the same.  Or, just reach out to say hello.</h1>
+            </div>
         </div>
     </div>
     <div class="section2" id="me section2">
@@ -119,7 +132,7 @@
             <div class="title-col">
                 <h2>Skills</h2>
              </div>
-            <p class="use-desc">The Iron Yard introduced me to this pretty cool toolset. Here's what I use:</p>
+            <p class="use-desc">Four months ago, these tools were foreign to me.  Now I use them regularly.</p>
 
             <div class="logos">
                 <div class="javascript" id="logo">
@@ -195,7 +208,7 @@
         <ul class="thumbs-list">
             <li>
                 <a href="http://ahealthynetwork.firebaseapp.com/"><img alt="A Healthier Network" class="thumbnail" src=
-                "http://fillmurray.com/300/200">
+                "images/balanced.png">
                 <div class="description">
                     <h3>Balanced</h3>
                     <p>Holistic health, social network</p>
@@ -233,24 +246,20 @@
                     29451 | <a href="callto: 1-864-923-0201">(864) 923-0201</a> | <a href="mailto:andrewraynal@gmail.com?subject=Let's%20chat%20:)&body=Hey%20Andrew!%20I'd%20like%20you%20to%20develop%20my%20groovy%20app%20for%20me.%20Call%20me%20at...">andrewraynal@gmail.com</a></p>
                 </div>
                 <div class="summary">
-                    <p><em>Prior to becoming a Front End Developer, I worked as
-                    a lawyer in various capacities. As a result, I am an
-                    experienced problem solver, communicator, manager and
-                    diligent worker. I understand the bottom line and the
-                    importance of surpassing and managing client expectations
-                    while maintaining balance and efficiency in the
-                    workplace.</em></p>
+                    <p>Before I discovered the amazing world of Front End Development and Design, I worked as a lawyer in various capacities. As a result, I am an
+                    experienced problem solver, communicator, manager and diligent worker.  I understand the importance of surpassing and managing client expectations while maintaining balance and efficiency in the workplace.</p>
                 </div>
             </div>
             <div class="skills">
                 <div class="heading">
-                    <h2>Skills:</h2>
+                    <h2>Skills</h2>
                 </div>
                 <div class="list-skills scripts">
                     <ul class="skills">
                         <li>AngularJS</li>
                         <li>jQuery</li>
-                        <li>Underscore.js</li>
+                        <li>UnderscoreJS</li>
+                        <li>JavaScript</li>
                         <li>Jasmine and Mocha (unit testing)</li>
                         <li>Git &amp; GitHub (version control &amp; team
                         workflow)</li>
@@ -272,19 +281,16 @@
                 </div>
                 <div class="prev-employer">
                     <h3>Moveable Covers, LLC (Mount Pleasant, SC)</h3>
-                    <p><em>Junior Director - August 2013 - December
-                    2013</em></p>
+                    <p>Junior Director - August 2013 - December
+                    2013</p>
                     <ul class="job-desc">
-                        <li>Managed daily operations of a startup business
-                        that designs, builds, sells and installs
-                        steel­-framed, movable canopies for outdoor
-                        venues</li>
+                        <li>Managed daily operations of a startup business that designs, builds, sells and installs steel­-framed, movable canopies for outdoor venues</li>
                     </ul>
                 </div>
                 <div class="prev-employer">
                     <h3>Nelson Mullins Riley Scarborough, LLP (Columbia,
                     SC)</h3>
-                    <p><em>Staff Attorney - June 2011 - June 2013</em></p>
+                    <p>Staff Attorney - June 2011 - June 2013</p>
                     <ul class="job-desc">
                         <li>Coordinated and managed 200+ attorneys and
                         legal personnel</li>
@@ -300,8 +306,8 @@
                 </div>
                 <div class="prev-employer">
                     <h3>Hire Counsel, Inc. (Columbia, SC)</h3>
-                    <p><em>Contract Attorney — May 2010 - June
-                    2011</em></p>
+                    <p>Contract Attorney - May 2010 - June
+                    2011</p>
                     <ul class="job-desc">
                         <li>Reviewed, analyzed and classified thousands of
                         confidential discovery documents for Nelson Mullins
@@ -310,8 +316,8 @@
                 </div>
                 <div class="prev-employer">
                     <h3>Svalina Law Firm, PA (Beaufort, SC)</h3>
-                    <p><em>Associate Attorney — September 2008 - February
-                    2010</em></p>
+                    <p>Associate Attorney - September 2008 - February
+                    2010</p>
                     <ul class="job-desc">
                         <li>Analyzed and litigated civil and criminal cases
                         in South Carolina’s state courts</li>
@@ -322,8 +328,8 @@
                 </div>
                 <div class="prev-employer">
                     <h3>The Honorable James W. Johnson, Jr. of the 8th
-                    Judicial Circuit of South Carolina (Laurens, SC)    </h3>
-                    <p><em>Law Clerk — August 2007 - August 2008</em></p>
+                    Judicial Circuit of South Carolina (Laurens, SC)</h3>
+                    <p>Law Clerk - August 2007 - August 2008</p>
                     <ul class="job-desc">
                         <li>Researched and drafted orders and memoranda for
                         the Judge on substantive laws in South Carolina’s
@@ -338,7 +344,7 @@
                     <h2>Education</h2>
                 </div>
                 <div class="education">
-                    <h3>The Iron Yard Academy, Mount Pleasant, SC | Front End Engineering</h3>
+                    <h3>The Iron Yard Academy, Charleston, SC | Front End Engineering</h3>
                     <h3>Charleston School of Law, Charleston, SC | JD</h3>
                     <h3>Presbyterian College, Clinton, SC | BA - Spanish</h3>
                 </div>
