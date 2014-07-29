@@ -1322,8 +1322,7 @@ footer {
 
 .one-project header#masthead {
     padding: 12em 0 6em 0;
-    height: 50%;
-    background-image: url(../images/livemusic.jpg); 
+    height: 50%; 
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
