@@ -1293,6 +1293,11 @@ footer {
         padding-bottom: 40px;
     }
 }
+
+.red {
+    background-size: 10%;
+}
+
 .one-project .box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1525,10 +1530,6 @@ footer {
     z-index: 1;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-}
-.one-project .my-projects .red:hover:after {
-    opacity: 0.7;
-    background-color: #800000;
 }
 .one-project .my-projects .green:hover:after {
     opacity: 0.7;
