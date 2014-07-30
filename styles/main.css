@@ -8,6 +8,10 @@
 ul, li {
   list-style-type: none;
 }
+input {
+    margin: 10px;
+    padding: 10px;
+}
 .container {
     position: relative;
     width: 1152px;
@@ -559,7 +563,7 @@ button::-moz-focus-inner, {
     border: 0;
     padding: 0;
 }
-html,button,select,textarea {
+html,button {
     color: #222;
 }
 
@@ -666,7 +670,6 @@ h1 {
 
 h2 {
     font-size: 2.6em;
-    margin: 0 0 0.5em 0;
 }
 
 h3 {
@@ -959,9 +962,8 @@ body.mnav-open {
 }
 
 .header-wrapper {
-    padding: 6em 0;
-    margin-bottom: 2em;
-    border-bottom: 1px solid #eee;
+    padding: 5% 0;
+    margin-bottom: 1em;
     font-family: 'Lato',sans-serif;
 }
 
@@ -1075,10 +1077,6 @@ body.mnav-open {
     color: #000080;
 }
 
-.nav-dark-text #interior-header #logo svg path {
-    fill: #fff;
-}
-
 .nav-dark-text.scrolled #interior-header {
     background-color: rgba(214,214,214,0.97);
 }
@@ -1094,12 +1092,8 @@ footer {
 }
 
 .contact a {
-    color: #aaa;
+    color: #eee;
     text-decoration: none;
-}
-
-.contact a i {
-    padding-left: 3px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1123,17 +1117,38 @@ footer {
         display: block;
     }
 }
-
-.resume-wrap {
-    display: block;
-    border-top: solid 2px #000080;
-    width: 100%;
-    height: 75%;
-    padding-bottom: 56.25%;
-    position: relative;
-    overflow: hidden;
+.one-project .top-section {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
 }
-
+.ten.columns.offset-by-one.about-me {
+    border-top: solid 2px #800000;
+    padding-top: 25px;
+}
+.resume-wrap {
+    font-size: 24px;
+    line-height: 1.7em;
+    width: 90%;
+}
+.resume-wrap.contact {
+    border: none;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.resume-wrap.contact p a {
+    color: #222;
+}
+.phone {
+    background: url(../images/phone);
+}
+.resume-wrap p {
+    width: 95%;
+    padding: 5px;
+}
+.resume-wrap span {
+    font-size: 14px;
+}
 .one-project {
     -webkit-font-smoothing: antialiased;
 }
@@ -1157,21 +1172,19 @@ footer {
     margin-bottom: 1em;
     color: #444444;
 } 
-.resume-wrap h2 {
-  text-align: left;
-  margin-bottom: 0;
-  padding: 0;
+.one-project .top-section h2 {
+    margin: 10px 0;
+}
+.one-project .resume-wrap h2 {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 @media only screen and (min-width: 959px) {
     .one-project h1 {
         font-size: 4em;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .resume-wrap {
-        background: scroll;
-        overflow: auto;
     }
 }
 
@@ -1200,7 +1213,6 @@ footer {
     font-size: 1.5em;
     line-height: 1.5em;
 }
-
 .one-project p.underline {
     font-family: 'Roboto', sans-serif;
     width: 85%;
@@ -1229,28 +1241,6 @@ footer {
     line-height: 1.6em;
 }
 
-.one-project blockquote {
-    position: relative;
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 100;
-    color: #666;
-    font-size: 2em;
-    line-height: 1.2em;
-    width: 100%;
-    padding: 0;
-    margin: 1em 0;
-}
-
-.one-project blockquote:after {
-    position: absolute;
-    content: "";
-    left: -20px;
-    border-left: 2px solid #000080;
-    height: 82%;
-    top: 11%;
-    width: 0;
-}
-
 @media only screen and (min-width: 959px) {
     .one-project blockquote {
         width: 60%;
@@ -1269,7 +1259,7 @@ footer {
     margin-left: -20px;
 }
 .one-project .site-content a {
-    color: #000080;
+    color: #eee;
 }
 
 .one-project .border-bottom {
@@ -1281,8 +1271,8 @@ footer {
     border-bottom: 1px solid #444444;
 }
 
-.one-project .border-bottom-blue {
-    border-bottom: 1px solid rgba(71,163,218,1);
+.one-project .border-bottom-red {
+    border-bottom: 1px solid #800000;
 }
 
 .one-project .white-bg {
@@ -1293,6 +1283,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+#projects {
+    padding:0;
+}
 @media only screen and (min-width: 959px) {
     .one-project .section-padding {
         padding-top: 40px;
@@ -1300,8 +1293,8 @@ footer {
     }
 }
 
-.one-project .blue {
-    color: rgba(71,163,218,1);
+.one-project .red {
+    color: #800000;
 }
 
 .one-project .box {
@@ -1323,6 +1316,7 @@ footer {
 .one-project header#masthead {
     padding: 12em 0 6em 0;
     height: 50%; 
+    background-image:url(../images/livemusic.jpg);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
@@ -1333,44 +1327,56 @@ footer {
         padding: 18em 0 10em 0;
     }
 }
-
-
-.one-project .section-resume-container {
-    padding-top: 0;
-    width: 100%;
-    position: relative;
-}
-
-.one-project .section-resume-container .section-resume-wrapper {
-    width: 500%;
-    height: 100%;
-    display: block;
-    padding-bottom: 30.25%;
-    position: relative;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.one-project .section-resume-container .section-resume {
-    position: relative;
-    width: 16%;
-}
-
-.one-project .section-resume-container .section-resume .caption {
-    position: absolute;
-    display: block;
-    bottom: 0px;
-    width: 100%;
+.one-project .row .caption {
+    margin: 0 auto;
+    width: 30%;
+    height: 80px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 20px 38%;
+    text-align: center;
     background-color: #808000;
-    font-size: 80%;
+    font-size: 100%;
     color: #fff;
 } 
+.caption a {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.caption a p {
+    padding-top: 10px;
+
+}
+ .caption a span {
+    font-weight: 800;
+    text-decoration: underline;
+ }
+ .one-project .resume-container {
+    padding-left: 160px;
+    padding-right: 0px;
+ }
+ .resume-wrap.contact a {
+    color: #222;
+ }
+ .phone {
+    background: url(../images/phone-39-48.png) no-repeat;
+ }
+ .email {
+    background: url(../images/message-outline-48.png) no-repeat;
+ }
+ .phone, .email {
+    padding-right: 5px;
+ }
+@media only screen and (max-width: 320px) {
+    .one-project .six .resume-container .caption {
+        padding: 15px;
+        text-align: center;
+    }
+}
 .one-project .blue-section {
     background-color: #000080;
+    margin-top: -40px;
+    padding-top: 100px;
 }
 
 .one-project .blue-section h4 {
@@ -1384,7 +1390,7 @@ footer {
 }
 
 .one-project .projects {
-    background-color: #fff;
+    background-color: #000080;
 }
 .one-project .me {
     background-color: white;
@@ -1398,15 +1404,15 @@ footer {
     width: 45%;
     color: white;
 }
-
+/*
 .one-project .learned-box {
     width: 500px;
     height: 500px;
-    margin-left: 7%;
+    margin: 0 auto;
 }
 
 .one-project .learned-image {
-    background-image:url();
+    background-image:url(http://fillmurray.com/200/300);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1457,7 +1463,7 @@ footer {
         width: 50%;
         float: left;
     }
-}
+}*/
 .one-project .the-end {
     text-align: center;
     padding-top: 50px;
@@ -1474,10 +1480,6 @@ footer {
 
 .one-project .the-end button:hover {
     background-color: rgba(0, 0, 128,0.8);
-}
-
-.one-project .the-end {
-    background-color: #ffffff;
 }
 
 .one-project .the-end .email-me-button {
@@ -1645,47 +1647,3 @@ footer {
     page-break-after: avoid;
   }
 }
-
-div.scripts {
-  -moz-column-count: 2;
-  -moz-column-gap: 0;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 0;
-  column-count: 2;
-  column-gap: 0;
-  padding:  0;
-}
-.skills h2,
-.experience h2,
-.education h2 {
-  font-size: 24px;
-  margin: 5px 0;
-  padding: 5px;
-}
-.prev-employer h3 {
-  font-size: 16px;
-  margin-left: 25px;
-}
-.prev-employer p {
-  margin-left: 30px;
-}
-.prev-employer ul {
-  margin-left: 25px;
-}
-.prev-employer ul li {
-  margin-left: 25px;
-}
-.job-desc ul li{
-  text-align: left;
-  margin-left: 20px;
-}
-.education h3 {
-  font-size: 16px;
-  font-size: 14px;
-  margin-left: 25px;
-}
-.education p {
-  margin-left: 30px;
-}
-/*# sourceMappingURL=css/style.css.map */
-/*
