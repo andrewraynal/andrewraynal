@@ -693,9 +693,6 @@ a,a:link,a:active,a:visited {
 .text-right {
     text-align: right;
 }
-.bg-white {
-    background-color: #ffffff;
-}
 .page-wrap {
     -webkit-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -703,23 +700,6 @@ a,a:link,a:active,a:visited {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     opacity: 1;
-}
-.button {
-    display: inline-block;
-    padding: 1em 1.5em 0.9em 1.5em;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 0 0.5em 0.5em 0;
-    color: #ffffff;
-    background-color: transparent;
-    border: 1px solid rgba(255,255,255,0.19999999999999996);
-    border-radius: 5px;
-    font-weight: 100;
-}
-
-.button:link,.button:active,.button:visited {
-    color: #ffffff;
 }
 
 #main-header {
@@ -804,6 +784,9 @@ a,a:link,a:active,a:visited {
         padding-top: 35px;
     }
 }
+@media only screen and (min-device-width: 1px) and (max-device-width: 767px) {
+    /* CSS Rules to go here */
+}
 
 #main-header #logo {
     -webkit-transition: width 0.25s ease;
@@ -851,7 +834,7 @@ a,a:link,a:active,a:visited {
     position: absolute;
     top: -20px;
     right: 20px;
-    background-color: #000080;
+    background-image: url(../images/close-btn.png);
     border-radius: 50px;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -913,7 +896,7 @@ a,a:link,a:active,a:visited {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #dedede;
+    background-color: #eee;
     border-radius: 4px;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -923,7 +906,7 @@ a,a:link,a:active,a:visited {
     -webkit-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease;
     cursor: pointer;
-    background-image: url();
+    background-image: url(../images/mobile-menu.png);
     -webkit-background-size: 45%;
     background-size: 45%;
     background-position: center;
@@ -1083,7 +1066,7 @@ body.mnav-open {
 }
 footer {
     font-size: 0.8em;
-    color: #444;
+    color: #fff;
     padding: 40px 0;
     background-color: rgba(0,0,0,0.9);
     position: relative;
@@ -1124,7 +1107,7 @@ footer {
     background-position: center;
 }
 .ten.columns.offset-by-one.about-me {
-    border-top: solid 2px #800000;
+    border-top: solid 2px #222;
     padding-top: 25px;
 }
 .resume-wrap {
@@ -1323,34 +1306,15 @@ footer {
         padding: 18em 0 10em 0;
     }
 }
-.one-project .row .caption {
-    margin: 0 auto;
-    width: 30%;
-    height: 80px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #808000;
-    font-size: 100%;
-    color: #fff;
-} 
-.caption a {
-    letter-spacing: 2px;
-    font-size: 18px;
-}
-.caption a p {
-    padding-top: 10px;
-
-}
- .caption a span {
-    font-weight: 800;
-    text-decoration: underline;
- }
  .one-project .resume-container {
-    padding-left: 160px;
+    padding-left: 170px;
     padding-right: 0px;
  }
+ @media only screen and (min-width: 320px) {
+    .one-project .resume-container {
+        padding-left: 0;
+    }
+}
  .resume-wrap.contact a {
     color: #222;
  }
@@ -1363,14 +1327,17 @@ footer {
  .phone, .email {
     padding-right: 5px;
  }
-@media only screen and (max-width: 320px) {
-    .one-project .six .resume-container .caption {
-        padding: 15px;
-        text-align: center;
+.row .caption .download:hover {
+    background-color: #808000;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     }
-}
+
 .one-project .blue-section {
-    background-color: #000080;
+    background-color: #222;
     margin-top: -40px;
     padding-top: 100px;
 }
@@ -1400,82 +1367,15 @@ footer {
     width: 45%;
     color: white;
 }
-/*
-.one-project .learned-box {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-.one-project .learned-image {
-    background-image:url(http://fillmurray.com/200/300);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid 5px #008000;
-    height: 0;
-    width: 100%;
-    padding-bottom: 80%;
-}
-.one-project .image-right {
-    background-image: none;
-    background-color: #fff;
-    border: solid 5px #000080;
-    text-align: center;
-    margin-left: 5%;
-    color: #222;
-    font-size: 1.5em;
-    line-height: 2em;
-}
-
-@media only screen and (min-width: 959px) {
-    .one-project .learned-info {
-        margin-top: -70px;
-    }
-}
-
-.one-project .learned-quote {
-    background-color: #fff;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 20px;
-    border: 3px solid #800000;
-}
-.one-project .quote-right {
-    border: 3px solid #808000;
-}
-.one-project .learned-quote:after {
-    content: '"';
-}
-
-.one-project .learned-quote:before {
-    content: '"';
-}
-
-@media only screen and (min-width: 959px) {
-    .one-project .learned-quote {
-        width: 50%;
-        float: left;
-    }
-}*/
 .one-project .the-end {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-.one-project .the-end button {
-    background-color: #000080;
-    border: none;
-    padding: 15px 50px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.one-project .the-end button:hover {
-    background-color: rgba(0, 0, 128,0.8);
+.one-project .download {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .one-project .the-end .email-me-button {
@@ -1491,6 +1391,19 @@ footer {
     -webkit-transition: all 0.15s ease;
     transition: all 0.15s ease;
 }
+.one-project .download .email-me-button {
+    background-color: #808000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: .5em 2em;
+    margin: 0px 0 2em 0;
+    font-family: 'Open Sans',sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
 
 @media only screen and (min-width:1024px) {
     .one-project .the-end .email-me-button:hover {
@@ -1500,6 +1413,25 @@ footer {
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
     }
+}
+@media only screen and (min-width:1024px) {
+    .one-project .download .email-me-button:hover {
+      background-color: #808000;
+        padding: .5em 4em;
+        border-radius: 10px;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+}
+.download h2 {
+    padding: 0;
+    margin-bottom: 15px;
+}
+.one-project .top-section {
+    padding: 0;
+}
+.one-project .download {
+    padding: 0;
 }
 .one-project .my-projects a {
     display: block;
@@ -1527,16 +1459,13 @@ footer {
     transition: all 0.2s ease;
 }
 .one-project .my-projects .red:hover:after {
-    opacity: 0.7;
-    background-color: #800000;
+    opacity: 0.4;
 }
 .one-project .my-projects .green:hover:after {
-    opacity: 0.7;
-    background-color: #808000;
+    opacity: 0.4;
 }
 .one-project .my-projects .blue:hover:after {
-    opacity: 0.7;
-    background-color: #000080;
+    opacity: 0.4;
 }
 .one-project .my-projects .container {
     z-index: 2;

@@ -13,7 +13,7 @@ $(document).ready(function(){
 				bgImage.css('-webkit-filter', 'brightness(150%)');
 			}
 			else if (here <= 150) {
-				bgImage.css('-webkit-filter', 'brightness(200%)');
+				bgImage.css('-webkit-filter', 'brightness(175%)');
 			}
 				});
 
@@ -24,9 +24,9 @@ $(document).ready(function(){
 			var here = getPos();
 			console.log(here);
 			if (here >= 1300) {
-				bgProjectOne.css('-webkit-filter', 'brightness(300%)');
-				bgProjectTwo.css('-webkit-filter', 'brightness(300%)');
-				bgProjectThree.css('-webkit-filter', 'brightness(300%)');
+				bgProjectOne.css('-webkit-filter', 'brightness(200%)');
+				bgProjectTwo.css('-webkit-filter', 'brightness(200%)');
+				bgProjectThree.css('-webkit-filter', 'brightness(200%)');
 			
 			}
 		}); 
