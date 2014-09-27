@@ -381,101 +381,7 @@ li a:focus {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     opacity: 1;
-}
-
-#main-header {
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    width: 100%;
-    background: transparent;
-    position: fixed;
-    z-index: 9999;
-    overflow: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    color: #ffffff;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-@media only screen and (max-width: 1024px) {
-    #main-header {
-        position: absolute;
-    }
-}
-
-#main-header .container {
-    padding-top: 0;
-    -webkit-transition: padding-top 0.25s ease;
-    transition: padding-top 0.25s ease;
-}
-
-#main-header h1 {
-    font-weight: 300;
-    font-size: 3.5em;
-    border-top: 1px solid rgba(255,255,255,0.19999999999999996);
-    padding-top: 50px;
-    color: #ffffff;
-}
-
-@media only screen and (max-width: 767px) {
-    #main-header h1 {
-        font-size: 2em;
-        padding-top: 15px;
-    }
-}
-
-#main-header nav {
     position: relative;
-    text-align: right;
-    float: right;
-}
-
-#main-header nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Lato',sans-serif;
-    color: #ffffff;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    display: inline-block;
-    padding: 8px 0 8px 0;
-    margin-left: 42px;
-    font-size: 0.8em;
-}
-
-@media only screen and (max-width: 960px) {
-    #main-header nav a {
-        margin-left: 30px;
-    }
-}
-
-#main-header .row {
-    position: relative;
-    padding-top: 50px;
-    margin-bottom: 30px;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
-}
-
-@media only screen and (max-width: 959px) {
-    #main-header .row {
-        padding-top: 35px;
-    }
-}
-
-#main-header #logo {
-    -webkit-transition: width 0.25s ease;
-    transition: width 0.25s ease;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    width: 160px;
-    height: 56px;
-    display: block;
 }
 
 .articles {
@@ -531,7 +437,8 @@ li a:focus {
     width: 100%;
     height: 98px;
     background-color: rgba(34,34,34,0.9);
-    position: fixed;
+    position: absolute;
+    top: 0;
     z-index: 9999;
     overflow: hidden;
     -webkit-transform: translate3d(0,0,0);
