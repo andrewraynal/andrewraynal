@@ -877,6 +877,11 @@ footer {
         padding-left: 0;
     }
 }
+ @media only screen and (max-width: 640px) {
+    .one-project .resume-container {
+        padding-left: 15px;
+    }
+}
  .resume-wrap.contact a {
     color: #222;
  }
