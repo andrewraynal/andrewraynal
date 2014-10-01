@@ -786,10 +786,10 @@ footer {
       .one-project .aboutme {
         text-align: center;
     }
-    .resume-wrap h2 {
+    .one-project.resume-wrap h2 {
         text-align: center;
     }
-    .resume-wrap h2.email {
+    .one-project.resume-wrap h2.email {
         padding-top: 10px;
         margin-top: 20px;
     }
