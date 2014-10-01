@@ -694,7 +694,6 @@ footer {
 .one-project .aboutme {
    margin-top: 45px;
 }
-
 @media only screen and (min-width: 959px) {
     .one-project blockquote {
         width: 60%;
@@ -783,6 +782,9 @@ footer {
  @media only screen and (max-width: 320px) {
     .one-project .resume-container {
         padding-left: 0;
+    }
+      .one-project .aboutme {
+        text-align: center;
     }
 }
  @media only screen and (max-width: 640px) {
