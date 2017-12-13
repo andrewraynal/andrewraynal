@@ -2,15 +2,28 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111224179-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-111224179-1');
+  </script>
   <meta charset="UTF-8">
-  <title>Andrew Raynal</title>
+  <title>Andrew Raynal | Charleston, SC Attorney Lawyer practicing in the areas of Real Estate - Wills Trusts & Estates | Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description=" content="Andrew Raynal is a licensed South Carolina attorney in Charleston, South Carolina.  If you need a will or an estate plan or if you need to close a real estate transaction, contact Andrew Raynal, South Carolina lawyer.">
+  <meta name="keywords" content="charleston,james island,west ashley,john's island,ravenel,hollywood,edisto island,wadmalaw,mt. pleasant,sullivan's island,isle of palms,awendaw,mclellanville,georgetown,pawleys island,north charleston,summerville,goose creek,hanahan,wills,trusts,real estate,attorney,lawyer">
+  <meta property="og:title" content="Charleston Wills Trusts Estates Real Estate Lawyer Serving South Carolina">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrewraynal.com">
+  <meta property="og:site_name" content="andrewraynal.com">
   <link rel="shortcut icon" href="surprise100.ico" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
   <div class="container">
     <section class="row">
@@ -18,11 +31,12 @@
         <ul id="slide-out" class="side-nav">
           <li class="first"><h5>Contact</h5></li>
           <li class="divider"></li>
-          <li><a href="mailto:andrewraynal@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>email</a></li>
-          <li><a href="tel:1-864-923-0201"><i class="fa fa-phone" aria-hidden="true"></i>call</a></li>
-          <li><a href="https://linkedin.com/in/andrewraynal"><i class="fa fa-linkedin" aria-hidden="true"></i>more info</a></li>
+          <li><a href="mailto:andrew@andrewraynal.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
+          <li><a href="tel:1-864-923-0201"><i class="fa fa-phone" aria-hidden="true"></i>Call</a></li>
+          <li><a href="https://linkedin.com/in/andrewraynal"><i class="fa fa-linkedin" aria-hidden="true"></i>More info</a></li>
+          <li><a href="https://github.com/andrewraynal"><i class="fa fa-github" aria-hidden="true"></i>Code</a></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large" onClick="trackClick()"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </nav>
     </section>
     <section class="row">
@@ -30,7 +44,9 @@
       <div class="col s12 m6 l6">
         <div class="title center">
           <h2>Andrew Raynal</h2>
-          <span>Charleston, SC</span>
+          <span id="line-1">Attorney | Software Developer</span></br>
+          <span id="line-2">Charleston, SC</span></br>
+          <span><a href="mailto:andrew@andrewraynal.com" id="link">andrew@andrewraynal.com</a></span>
         </div>
       </div>
       <div class="col s12 m3 l3"></div>
