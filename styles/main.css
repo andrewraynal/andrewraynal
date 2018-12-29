@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #515359;
   letter-spacing: 0.4px;
 }
@@ -9,7 +9,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #515359;
 }
 nav {
@@ -27,4 +27,7 @@ a {
 }
 .divider {
   margin-bottom: 10px;
+}
+.middle {
+  padding: 5px 0;
 }
