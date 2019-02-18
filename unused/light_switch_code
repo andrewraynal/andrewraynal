@@ -483,12 +483,12 @@ label:nth-child(6) > span > a > img {
                                 </span>
                             </label>
                             <label for="switch_3">
-                                <span><a href="http://www.linkedin.com/in/AndrewRaynal" title="Connect with me on Linkedin" target="_blank"><img src="images/linkedin-48.png" /></a></span>
+                                <span><a href="https://www.linkedin.com/in/AndrewRaynal" title="Connect with me on Linkedin" target="_blank"><img src="images/linkedin-48.png" /></a></span>
                             </label>
                             <label for="switch_4">
-                                <span><a href="http://www.twitter.com/AndrewRaynal" title="Follow me on Twitter" target="_blank"><img src="images/twitter-48.png" /></a></span>
+                                <span><a href="https://www.twitter.com/AndrewRaynal" title="Follow me on Twitter" target="_blank"><img src="images/twitter-48.png" /></a></span>
                             </label>
-                            <label for="switch_5"><span><a href="http://www.github.com/AndrewRaynal" title="Check it" target="_blank"><img src="images/github-6-48.png" /></a></span></label>
+                            <label for="switch_5"><span><a href="https://www.github.com/AndrewRaynal" title="Check it" target="_blank"><img src="images/github-6-48.png" /></a></span></label>
 
                             <!-- INPUT -->
                             <input id="switch_off" name="switch" checked type="radio">
