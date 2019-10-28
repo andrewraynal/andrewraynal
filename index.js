@@ -1,15 +1,7 @@
 (function() {
-  $('.button-collapse').sideNav({
-    menuWidth: 300, // Default is 300
-    edge: 'left', // Choose the horizontal origin
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    draggable: true // Choose whether you can drag to open on touch screens,
-    //onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
-    //onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
-  });
-  gtag('event', 'page_view', { send_to: 'UA-111224179-1' });
-})(window, document, $);
+  gtag("event", "page_view", { send_to: "UA-111224179-1" });
+})(window, document);
 
 let trackClick = () => {
-  gtag('event', 'select_content', { send_to: 'UA-111224179-1' });
+  gtag("event", "select_content", { send_to: "UA-111224179-1" });
 };
